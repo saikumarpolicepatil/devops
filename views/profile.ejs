@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+  <div class="profile">
+    <div class="profile-header">
+      <h1>Student Profile</h1>
+    </div>
+    <div class="profile-details">
+      <h2>Details</h2>
+      <div class="detail">
+        <span class="label">Name:</span>
+        <span class="value"><%= student.name %></span>
+      </div>
+      <div class="detail">
+        <span class="label">Email:</span>
+        <span class="value"><%= student.email %></span>
+      </div>
+      <div class="detail">
+        <span class="label">Phone:</span>
+        <span class="value"><%= student.phone_no %></span>
+      </div>
+      <div class="detail">
+        <span class="label">USN:</span>
+        <span class="value"><%= student.usn %></span>
+      </div>
+      <div class="clubs-joined">
+        <h2>Clubs Joined</h2>
+        <ul class="joined-list">
+          <% if (clubsJoined.length>0) {
+            clubsJoined.forEach(club => { %>
+              <li><%= club %></li>
+            <% });
+          } else { %>
+            <li id="joined-list1">No clubs joined</li>
+          <% } %>
+        </ul>
+      </div>
+      <div class="events-joined">
+        <h2>Events Joined</h2>
+        <ul class="joined-list">
+          <% if (eventsJoined.length>0) {
+            eventsJoined.forEach(event => { %>
+              <li><%= event %></li>
+            <% });
+          } else { %>
+            <li id="joined-list1">No events joined</li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

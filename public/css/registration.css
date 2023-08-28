@@ -1,0 +1,137 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a default font */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Center align text and form */
+  center {
+    text-align: center;
+  }
+  
+  /* Background image and spacing */
+  body {
+    background-image: url(images/new1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Form styling */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Adjust the width as needed */
+    margin: 0 auto;
+  }
+  
+  /* Additional style for the password container */
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  #message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: absolute;
+    top: 0;
+    float: right;
+    top: -147px;
+    left: 300px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  #phoneNumber{
+    margin: 12px 0;
+  }
+  #message p {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -20px;
+    content: "✔";
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -20px;
+    content: "✖";
+  }
+  
+  /* Form input and label styling */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  select:focus option[selected] {
+    display: none;
+}
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form input[type="password"],
+  form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Submit button styling */
+  form input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Submit button hover effect */
+  form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Password validation message styling */
+  #message {
+    font-size: 14px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    form {
+      width: 100%;
+    }
+  
+    #message {
+      position: static;
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

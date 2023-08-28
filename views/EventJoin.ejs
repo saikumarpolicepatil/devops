@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- EventName %></title>
+    <link rel="stylesheet" href="css/EventJoin.css">
+</head>
+<body>
+    <h1><%- EventName %></h1>
+    <form action="/joinEvent" method="post">
+        <div class="input0">
+            <input type="hidden" name="eventName" id="text" readonly value="<%- EventName %>">
+        </div>
+        <div class="input3">
+            <label for="Name">Name</label>
+            <input type="text" name="Name" id="Name">
+        </div>
+        <div class="input1">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" value="<%- email %>" readonly>
+        </div>
+        <div class="input2">
+            <label for="phone">Phone number</label>
+            <input type="phone" name="phone" id="phone">
+        </div>
+        <div class="input4">
+            <label for="Branch">Branch</label>
+            <select name="Branch" id="Branch">
+                <option selected>Select Branch</option>
+                <option value="CSE">CSE</option>
+                <option value="ECE">ECE</option>
+                <option value="ISE">ISE</option>
+                <option value="CV">CV</option>
+                <option value="ME">ME</option>
+                <option value="BT">BT</option>
+                <option value="AIML">AIML</option>
+            </select>
+        </div>
+        <div class="input5">
+            <label for="Year">Year</label>
+            <select name="Year" id="Year">
+                <option selected>Select Year</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+        </div>
+        <div class="submit">
+            <input type="submit" value="submit">
+        </div>
+    </form>
+</body>
+</html>

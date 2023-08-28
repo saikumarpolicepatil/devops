@@ -1,0 +1,85 @@
+/* Reset default margin and padding */
+body, h1, h2, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set up dark mode background color and font styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+/* Styling for the profile container */
+.profile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(30%);
+}
+
+/* Header styles */
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-header h1 {
+  color: #ffffff;
+}
+
+/* Details section */
+.profile-details h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.value {
+  flex: 2;
+}
+
+/* Clubs and Events section */
+.clubs-joined, .events-joined {
+  margin-top: 20px;
+}
+
+.joined-list {
+  list-style: none;
+}
+
+.joined-list li {
+  padding: 5px 0;
+  border-bottom: 1px solid #555;
+}
+
+.joined-list li:first-child {
+  color: #777;
+}
+#joined-list1{
+  border: none;
+}
+@media screen and (max-width: 480px) {
+  .profile {
+    padding: 10px;
+  }
+
+  .profile-details h2 {
+    font-size: 16px;
+  }
+}
