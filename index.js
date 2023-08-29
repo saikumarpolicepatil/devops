@@ -116,6 +116,7 @@ app.get("/:links",(req,res)=>{
     else if(requestedUrl=="IEEEhome") res.sendFile(__dirname+"/IEEEhome.html");
     else if(requestedUrl=="registrationpage") res.sendFile(__dirname+"/registrationpage.html");
     else if(requestedUrl==="after_login") res.sendFile(__dirname+"/after_login.html");
+    else if(requestedUrl==="logout") res.redirect("/");
 })
 app.post("/userLogin",(req,res)=>{
     const {mail, pass} = req.body;
